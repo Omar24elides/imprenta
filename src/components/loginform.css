@@ -38,7 +38,6 @@
     width: 47.5%;
     height: 90%;
     border-radius: 0.25em;
-    background-color: black;
     background-position: center;
     background-position: contain;
     background-repeat: no-repeat;
@@ -98,6 +97,7 @@ input :focus {
     transform: scale(1);
     transition: 1.5s;
 }
+
 /* -------------------- TABLET  -------------------- */
 @media only screen and (min-device-width: 37em) {
     .page {

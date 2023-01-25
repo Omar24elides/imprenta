@@ -1,4 +1,4 @@
-// aquii estan los "productos" que usaremos
+// aqui estan los "productos" que usaremos
 const data = {
     products:[
         {

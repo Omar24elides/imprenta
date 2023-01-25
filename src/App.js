@@ -68,10 +68,9 @@ function App() {
 
         {/* es para pie de pagina */}
           <footer className='bg-dark p-3 mt-5'>
-            <p className='text-center text-white'>Imprenta Nacional de la cultua</p>
+            <p className='text-center text-white'>Imprenta Nacional de la culturaa</p>
             
           </footer>
-        {/*  seccion para footer */}
       </div>
     </div>
 
