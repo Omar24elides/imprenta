@@ -1,4 +1,4 @@
-import Step4Form from "../components/Step4Form";
+import Step4Form from "../components/Step4Form/Index";
 import PageComponent from "./PageComponent";
 
 function Step4 () {
