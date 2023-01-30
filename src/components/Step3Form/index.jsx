@@ -1,10 +1,15 @@
-import { Link } from 'react-router-dom'
-import { tripaProps } from './formData'
+import { Link } from "react-router-dom"
+import { tripaProps } from "../Step2Form/formData"
 
-const Step2Form = () => {
+const Step3Form = () => {
     return (
         <div className='container'>
-                <h2> <span className="badge badge text-bg-dark">Consumo de sustrato en TRIPA</span></h2>
+                <h2> 
+                    <span className="badge badge text-bg-dark">
+                        Consumo de sustrato en PORTADA Y OTROS FORMATOS
+                    </span>
+                </h2>
+                
             <form>
                 <div className="row">
                     <div className="col">
@@ -19,7 +24,7 @@ const Step2Form = () => {
                         <div className="card-body">
                             <div className="card" >
                                 <div className="card-header">
-                                    Tripa A
+                                    Portada
                                 </div>
                                 <ul className="list-group list-group-flush">
                                     <input 
@@ -44,7 +49,12 @@ const Step2Form = () => {
                                     <input 
                                         type="number" 
                                         className="form-control" 
-                                        placeholder="N. De Paginas" 
+                                        placeholder="Lomo" 
+                                    />
+                                    <input 
+                                        type="number" 
+                                        className="form-control" 
+                                        placeholder="Solapa" 
                                     />
                                 </ul>
                             </div>
@@ -57,7 +67,7 @@ const Step2Form = () => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Tripa (A)
+                                    Papel (Portada)
                                 </button>
 
                                 <ul className="dropdown-menu" ariaLabelledby="dropdownMenuLink">
@@ -75,7 +85,7 @@ const Step2Form = () => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Tipo de Maquina
+                                    Tipo Maquina
                                 </button>
 
                                 <ul className="dropdown-menu" ariaLabelledby="dropdownMenuLink">
@@ -93,7 +103,7 @@ const Step2Form = () => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Tipo de Montaje
+                                    Tipo Montaje
                                 </button>
 
                                 <ul className="dropdown-menu" ariaLabelledby="dropdownMenuLink">
@@ -111,7 +121,7 @@ const Step2Form = () => {
                         <div className="card-body">
                             <div className="card" >
                                 <div className="card-header">
-                                    Tripa B
+                                    Otros Formatos
                                 </div>
                                 <ul className="list-group list-group-flush">
                                         <input 
@@ -134,14 +144,10 @@ const Step2Form = () => {
                                         className="form-control" 
                                         placeholder="Color R." 
                                         />
-                                        <input 
-                                        type="number" 
-                                        className="form-control" 
-                                        placeholder="N. De Paginas" 
-                                        />
                                 </ul>
                             </div>
                             <br />
+                                        <br /><br /><br />
                             <div className="col dropdown">
                                 <button
                                     id="dropdownMenuLink"
@@ -149,7 +155,7 @@ const Step2Form = () => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Tripa (B)
+                                    Papel (otro Formato)
                                 </button>
 
                                 <ul className="dropdown-menu" ariaLabelledby="dropdownMenuLink" >
@@ -167,7 +173,7 @@ const Step2Form = () => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Tipo de Maquina
+                                    Tipo Maquina
                                 </button>
 
                                 <ul className="dropdown-menu" ariaLabelledby="dropdownMenuLink" >
@@ -185,7 +191,7 @@ const Step2Form = () => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Tipo de Montaje
+                                    Tipo Montaje
                                 </button>
 
                                 <ul className="dropdown-menu" ariaLabelledby="dropdownMenuLink" >
@@ -205,24 +211,23 @@ const Step2Form = () => {
                     <br />
                     <ul class="pagination">
                         <li class="page-item page-link">
-                            <Link to="/step1">
-                                Step 1
+                            <Link to="/step2">
+                                Step 2
                             </Link>
                         </li>
                         <li class="page-item disabled">
-                            <span class="page-link">Step 2</span>
+                            <span class="page-link">
+                                Step 3
+                            </span>
                         </li>
                         <li class="page-item page-link">
-                            <Link to="/step3">
-                                Step 3
+                            <Link to="/step4">
+                                Step 4
                             </Link>
                         </li>
                     </ul>
                 </nav>
-
-
         </div>
     )
 }
-
-export default Step2Form
+export default Step3Form

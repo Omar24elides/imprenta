@@ -23,6 +23,7 @@ const Step1Form = () => {
                 <div className="col">
                     <label htmlFor="exampleInputEmail1">Razón Social</label>
                     <input name="razon" type="text" className="form-control" placeholder="Razón Social" />
+                <br />
                 </div>
 
                 <fieldset className="form-group">
@@ -48,18 +49,25 @@ const Step1Form = () => {
                             <input className="form-check-input" type="radio" name="documentoOptions" id="documento-g" value="g" />
                             <label className="form-check-label" htmlFor="documento-g">G</label>
                         </div>
+                        <br />
                     </div>
                 </fieldset>
+
             </div>
 
+            
             <div className="form-group">
+                <br />
                 <label htmlFor="exampleInputEmail1">Correo Electronico</label>
                 <input name="email" type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@gmail.com" />
             </div>
 
             <div className="form-group">
+                <br />
                 <label htmlFor="password">Contraseña</label>
                 <input id="password" name="password" type="password" className="form-control" placeholder="Contraseña" />
+                <br />
+                <br />
             </div>
 
             <button type="submit" className="btn btn-primary">Siguiente</button>
