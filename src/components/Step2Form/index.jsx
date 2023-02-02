@@ -203,16 +203,16 @@ const Step2Form = () => {
                 
                 <nav aria-label="Page navigation example">
                     <br />
-                    <ul class="pagination">
-                        <li class="page-item page-link">
+                    <ul className="pagination">
+                        <li className="page-item page-link">
                             <Link to="/step1">
                                 Step 1
                             </Link>
                         </li>
-                        <li class="page-item disabled">
-                            <span class="page-link">Step 2</span>
+                        <li className="page-item disabled">
+                            <span className="page-link">Step 2</span>
                         </li>
-                        <li class="page-item page-link">
+                        <li className="page-item page-link">
                             <Link to="/step3">
                                 Step 3
                             </Link>

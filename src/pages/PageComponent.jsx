@@ -2,9 +2,9 @@ const PageComponent = ({ children, className }) => (
     <>
         {/* Header */}
         <header className='px-4'>
-            <nav className="navbar navbar-light bg-light">
+            <nav className="navbar text-center justify-content-center navbar-light bg-light">
                 <a className="navbar-brand" href="https://imprentadelacultura.wordpress.com/">
-                    <img src="https://imprentadelacultura.files.wordpress.com/2015/04/logo-imprenta.png" width="30" height="30" className="d-inline-block align-top" alt="impresion de la cultura" />
+                    <img src="https://imprentadelacultura.files.wordpress.com/2015/04/logo-imprenta.png" width="80" height="40" className="d-inline-block align-top" alt="impresion de la cultura" />
                     Fundacion Imprenta de la Cultura
                 </a>
             </nav>

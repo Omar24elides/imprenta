@@ -1,5 +1,9 @@
 import 'bootstrap';
-import React from 'react';
+import 'reactstrap';
+import "react-bootstrap";
+import "@emotion/react";
+import "@emotion/styled";
+import "@mui/material";
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
