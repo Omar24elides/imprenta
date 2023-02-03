@@ -607,6 +607,18 @@ const Step6Form = () => {
                 </ul>
             </nav>
 
+            <nav aria-label="Page navigation example">
+                <br />
+                <ul className="pagination">
+                    <li className="page-item page-link">
+                        <Link to="/step5">
+                            Anterior
+                        </Link>
+                    </li>
+                    <button type="submit" className="btn btn-primary">Siguiente</button>
+                </ul>
+            </nav>
+
         </div>
     )
 }

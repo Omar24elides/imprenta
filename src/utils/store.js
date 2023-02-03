@@ -3,46 +3,44 @@ import { useReducer, createContext } from "react";
 
 export const Store = createContext();
 
-//estado iniciall de la aplicacion o variable de estado
-const initialState ={
-    cart:{
-        cartItems: [],
-    }
+//estado inicial de la aplicacion o variable de estado
+const initialState = {
+    cliente: {
+        razon: "",
+        documento: "", 
+        email: "", 
+        password: "",
+    },
+    libro: {}
 }
 
-// funcion reductora de donde se extrae la logica funcional
-function reducer(state, action){
-    switch (action.type) {
-        case 'ADD_TO_CART': {
-            const newItem = action.payload
-            const existItem = state.cart.cartItems.find(item => item.id === newItem.id)
+function reducer(state, { type, payload }) {
+    switch (type) {
+        case 'STEP_1' : {
+            const newState = {
+                ...state,
+                cliente: { ...payload }
+            }
 
-            const cartItems = existItem ? state.cart.cartItems.map((item)=> item.name === existItem.name ? newItem: item )
-            : [...state.cart.cartItems, newItem]
+            return newState
+        }
+        case 'STEP_2' : {
+            const newState = {
+                ...state,
+                libro: { ...payload }
+            }
 
-            return {...state, cart:{...state.cart,cartItems}}
+            return newState
         }
 
-    case 'CART_REMOVE_ITEM' :{
-        const cartItems = state.cart.cartItems.filter(
-            (item => item.id !== action.payload.id)
-        )
-        return {...state , cart:{...state.cart, cartItems}}
-    }
-
-    case 'REMOVE_CART' :{
-        const cartItems = []
-        return {...state, cart:{...state.cart,cartItems}}
-    }
-
-    default: 
-        return state;
+        default: 
+            return state;
     }
 }
 
 // funcion para crear el store y envolver a los componentes hijos
-export function StoreProvider ({children}){
-    const[state, dispatch] = useReducer(reducer, initialState)
+export function StoreProvider ({children}) {
+    const [state, dispatch] = useReducer(reducer, initialState)
 
-    return <Store.Provider value={{state,dispatch}}>{children}</Store.Provider>
+    return <Store.Provider value={{state, dispatch}}>{children}</Store.Provider>
 }

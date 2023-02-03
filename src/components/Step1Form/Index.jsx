@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
+import { Store } from "../../utils/store";
 
 const Step1Form = () => {
     const history = useHistory()
+    const { state, dispatch } = useContext(Store)
+
 
     const onSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
 
+        let newCliente = {}
         // En la consola se puede apreciar cada uno de los valores del form
         for (let [key, value] of formData.entries()) {
-            console.log(key, value)
+            newCliente[key] = value
         }
+
+        dispatch({ type: 'STEP_1', payload: { ...newCliente } })
 
         // Comentar esto para pausar el cambio de pagina y poder ver la consola
         history.push('/step2')
@@ -30,23 +36,23 @@ const Step1Form = () => {
                     <div className="row">
                         <legend className="col-form-label col-sm-2 pt-0">Tipo decumento</legend>
                         <div className="col form-check form-check-inline">
-                            <input className="form-check-input" type="radio" name="documentoOptions" id="documento-v" value="v" />
+                            <input className="form-check-input" type="radio" name="documento" id="documento-v" value="v" />
                             <label className="form-check-label" htmlFor="documento-v">V</label>
                         </div>
                         <div className="col form-check form-check-inline">
-                            <input className="form-check-input" type="radio" name="documentoOptions" id="documento-j" value="j" />
+                            <input className="form-check-input" type="radio" name="documento" id="documento-j" value="j" />
                             <label className="form-check-label" htmlFor="documento-j">J</label>
                         </div>
                         <div className="col form-check form-check-inline">
-                            <input className="form-check-input" type="radio" name="documentoOptions" id="documento-e" value="e" />
+                            <input className="form-check-input" type="radio" name="documento" id="documento-e" value="e" />
                             <label className="form-check-label" htmlFor="documento-e">E</label>
                         </div>
                         <div className="col form-check form-check-inline">
-                            <input className="form-check-input" type="radio" name="documentoOptions" id="documento-p" value="p" />
+                            <input className="form-check-input" type="radio" name="documento" id="documento-p" value="p" />
                             <label className="form-check-label" htmlFor="documento-p">P</label>
                         </div>
                         <div className="col form-check form-check-inline">
-                            <input className="form-check-input" type="radio" name="documentoOptions" id="documento-g" value="g" />
+                            <input className="form-check-input" type="radio" name="documento" id="documento-g" value="g" />
                             <label className="form-check-label" htmlFor="documento-g">G</label>
                         </div>
                         <br />

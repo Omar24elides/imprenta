@@ -1,4 +1,4 @@
-import Step1Form from "../components/Step1Form"
+import Step1Form from "../components/Step1Form/Index"
 import PageComponent from "./PageComponent"
 
 function Step1() {

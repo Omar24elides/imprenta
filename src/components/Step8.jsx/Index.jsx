@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+import React from "react";
 import { useContext } from 'react';
-import data from '../data';
-import { Store } from '../utils/store';
-import PageComponent from "./PageComponent";
+import data from "../../data";
+import { Store } from '../../utils/store'
 
-function Home() {
+
+const Step8Form = () => {
 
     const { state, dispatch } = useContext(Store)
     const { cart: { cartItems } } = state
@@ -22,7 +24,6 @@ function Home() {
     }
 
     return (
-        <PageComponent>
             <div className="container">
                 <div className='col-md-8'>
                     {/* seccion para productos */}
@@ -60,9 +61,20 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+                <nav aria-label="Page navigation example">
+                <br />
+                <ul className="pagination">
+                    <li className="page-item page-link">
+                        <Link to="/step7">
+                            Anterior
+                        </Link>
+                    </li>
+                    <button type="submit" className="btn btn-primary">Fin</button>
+                </ul>
+            </nav>
             </div>
-        </PageComponent>
     );
 }
 
-export default Home;
+export default Step8Form;
