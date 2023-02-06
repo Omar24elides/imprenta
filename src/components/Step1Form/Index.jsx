@@ -4,7 +4,7 @@ import { Store } from "../../utils/store";
 
 const Step1Form = () => {
     const history = useHistory()
-    const { state, dispatch } = useContext(Store)
+    const { dispatch } = useContext(Store)
 
 
     const onSubmit = (e) => {
