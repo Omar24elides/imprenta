@@ -20,7 +20,7 @@ const Step1Form = () => {
         dispatch({ type: 'STEP_1', payload: { ...newCliente } })
 
         // Comentar esto para pausar el cambio de pagina y poder ver la consola
-        history.push('/step2')
+            history.push('/step2')      
     }
 
     return (

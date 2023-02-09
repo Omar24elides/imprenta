@@ -22,7 +22,7 @@ const Step6Form = () => {
         dispatch({ type: 'STEP_6', payload: { ...newManoObra } })
 
         // Comentar esto para pausar el cambio de pagina y poder ver la consola
-        history.push('/step5')
+        history.push('/step7')
     }
 
      return (
@@ -62,7 +62,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="conceptaMes"
                                         type="number" 
@@ -108,7 +109,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="kordtaMes"
                                         type="number" 
@@ -154,7 +156,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="oliverMes"
                                         type="number" 
@@ -200,7 +203,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="gtoMes"
                                         type="number" 
@@ -246,7 +250,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="parvaMes"
                                         type="number" 
@@ -291,7 +296,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="rekordMes"
                                         type="number" 
@@ -337,7 +343,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="minervaMes"
                                         type="number" 
@@ -383,7 +390,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="cylinderMes"
                                         type="number" 
@@ -429,7 +437,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="guillotinaMes"
                                         type="number" 
@@ -475,7 +484,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="tigraMes"
                                         type="number" 
@@ -521,7 +531,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="grapadoraMes"
                                         type="number" 
@@ -567,7 +578,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="dobladoraMes"
                                         type="number" 
@@ -613,7 +625,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="cosedoraMes"
                                         type="number" 
@@ -659,7 +672,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="artisticaMes"
                                         type="number" 
@@ -705,7 +719,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                        
+                                     />
                                     <input 
                                         name="krauseMes"
                                         type="number" 
@@ -751,7 +766,8 @@ const Step6Form = () => {
                                         className="form-control" 
                                         placeholder="Dias"
                                         min="0"
-                                        max="31"                                         />
+                                        max="31"                                         
+                                    />
                                     <input 
                                         name="fotolitoMes"
                                         type="number" 

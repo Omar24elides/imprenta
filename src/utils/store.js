@@ -195,7 +195,6 @@ const initialState = {
         plegado: "",
         diagramacion: "",
         numeracion: "",
-
     }
 }
 

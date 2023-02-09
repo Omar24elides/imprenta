@@ -1,4 +1,4 @@
-import Step8Form from "../components/Step8.jsx/Index";
+import Step8Form from "../components/Step8Form/Index";
 import PageComponent from "./PageComponent";
 
 function Step8 () {

@@ -22,7 +22,7 @@ const Step5Form = () => {
         dispatch({ type: 'STEP_5', payload: { ...newPlancha } })
 
         // Comentar esto para pausar el cambio de pagina y poder ver la consola
-        history.push('/step6')
+        history.push('/step6') 
     }
     return (
         <div className="container-fluid">
