@@ -26,7 +26,7 @@ const Step8Form = () => {
   return (
     <form onSubmit={onSubmit}>
       <div className="container-fluid">
-        <table class="table table-bordered">
+        <table className="table table-bordered">
           <thead>
             <tr>
               <th scope="col"> Datos </th>
